@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/icons/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="search">
+        <input id="search-input" type="search" placeholder="Find your location...">
+        <div id="search-button"></div>
+    </div>
+    <div id="weather" class="flex">
+        <div id="container">
+            <div id="location" class="flex"><p>Weather App</p></div>
+            <div id="display" class="flex">
+                <div id="time" class="date-time"></div>
+                <div id="icon"></div>
+                <div id="date" class="date-time"></div>
+            </div>
+            <div id="description" class="flex">Awaiting Location...</div>
+            <div id="temperature">
+                <div id="celsius" class="degrees flex">0°C</div>
+                <div id="fahrenheit" class="degrees flex">0°F</div>
+            </div>
+        </div>
+    </div>
+    <div id="api">Powered by <a href="https://openweathermap.org/" target="_blank">OpenWeather</a></div>
+    <div id="footer">Development: <a href="https://kaloyan-kirilov.github.io/" target="_blank">Kaloyan Kirilov</a>&nbsp;&nbsp;Icons: <a href="https://www.flaticon.com/packs/weather-360/" target="_blank">Flaticon</a></div>
+</body>
+</html>

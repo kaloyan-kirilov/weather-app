@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #266fb4;
+    background-image: url('../img/weather-bg.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+#search {
+    width: 37vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 4vh;
+}
+
+#search-input {
+    width: 29vh;
+    height: 5vh;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: none;
+    border-radius: 0.5vh;
+    padding: 1.25vh;
+    font-size: 2vh;
+}
+
+#search-input:focus::placeholder {
+    opacity: 0;
+}
+
+#search-input:focus {
+    background: white;
+}
+
+#search-button {
+    width: 6.3vh;
+    height: 6.3vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url('../img/icons/search.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45% 45%;
+    border: 0.5vh solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #ffc862;
+}
+
+#weather {
+    width: 37vh;
+    height: 75vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1vh 10vh 1vh 10vh;
+    margin-top: 3vh;
+}
+
+#container {
+    width: 93%;
+    height: 97%;
+    border: 2px solid #24445C;
+    border-radius: 0.5vh 9vh 0.5vh 9vh;
+    overflow: hidden;
+}
+
+#location {
+    height: 12%;
+    background: linear-gradient( #ffae17, #ffc862);
+    color: #24445C;
+    font-family: 'Play', sans-serif;
+    font-size: 3.3vh;
+    padding-right: 3vh;
+}
+
+#location p {
+    overflow: hidden;
+    max-width: 14ch;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#display {
+    height: 40%;
+    background: linear-gradient(#1e76b4, rgba(255, 255, 255, 0.5));
+    position: relative;
+}
+
+.date-time {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2vh;
+    color: white;
+    position: absolute;
+    top: 1%;
+}
+
+#time {
+    right: 3.5%;
+}
+
+#date {
+    left: 3.5%;
+}
+
+#icon {
+    width: 60%;
+    height: 70%;
+    background-image: url('../img/icons/compass.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#description {
+    height: 9%;
+    background: #24445C;
+    font-family: 'Acme', sans-serif;
+    font-size: 2.5vh;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-transform: capitalize;
+    color: white;
+}
+
+#temperature {
+    height: 40%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 9vh;
+}
+
+.degrees {
+    height: 50%;
+    text-shadow: 0.2vh 0.2vh 0.2vh black;
+}
+
+#celsius {
+    background: white;
+    color: #1867a0;
+}
+
+#fahrenheit {
+    background: linear-gradient( #1867a0, #115180);
+    color: white;
+}
+
+#api {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.1vh;
+    letter-spacing: 0.5px;
+    margin-left: 6.5vh;
+}
+
+#api a {
+    color: inherit;
+    text-underline-offset: 1px;
+}
+
+#api a:hover {
+    color: #ffe87f;
+}
+
+#footer {
+    font-family: 'Bitter', serif;
+    font-size: 2.1vh;
+    color: #004a75;
+    position: absolute;
+    bottom: 3vh;
+}
+
+#footer a {
+    color: inherit;
+}
+
+#footer a:hover {
+    color: white;
+    text-decoration-color: #f3851d;
+}
