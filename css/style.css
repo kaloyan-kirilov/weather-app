@@ -72,7 +72,7 @@ body {
 #weather {
     width: 37vh;
     height: 75vh;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.75);
     border-radius: 1vh 10vh 1vh 10vh;
     margin-top: 3vh;
 }
@@ -103,7 +103,7 @@ body {
 
 #display {
     height: 40%;
-    background: linear-gradient(#1e76b4, rgba(255, 255, 255, 0.5));
+    background: linear-gradient(#1e76b4, rgba(163, 217, 255, 0.5));
     position: relative;
 }
 
